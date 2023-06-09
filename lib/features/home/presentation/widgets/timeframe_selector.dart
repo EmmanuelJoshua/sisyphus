@@ -31,10 +31,10 @@ class TimeframeSelector extends HookWidget {
         scrollDirection: Axis.horizontal,
         child: Row(
           children: [
-            const SubText(
+            SubText(
               text: 'Time',
               textSize: 14,
-              foreground: blackTint,
+              foreground: context.isDarkMode() ? white : blackTint2,
             ),
             const Gap(5),
             ...timeframes.map(
@@ -64,9 +64,7 @@ class TimeframeSelector extends HookWidget {
                     child: SubText(
                       text: e,
                       textSize: 14,
-                      foreground: context.isDarkMode()
-                          ? blackTint
-                          : rockBlack.withOpacity(.8),
+                      foreground: context.isDarkMode() ? white : blackTint2,
                     ),
                   ),
                 ),
@@ -91,6 +89,10 @@ class TimeframeSelector extends HookWidget {
                   const Gap(5),
                   SvgPicture.asset(
                     ImageAssets.charts,
+                    colorFilter: ColorFilter.mode(
+                      context.isDarkMode() ? white : blackTint2,
+                      BlendMode.colorBurn,
+                    ),
                   )
                 ],
               ),
@@ -102,10 +104,10 @@ class TimeframeSelector extends HookWidget {
               color: divider.withOpacity(.08),
             ),
             const Gap(6),
-            const SubText(
+            SubText(
               text: 'Fx Indicators',
               textSize: 14,
-              foreground: blackTint,
+              foreground: context.isDarkMode() ? blackTint : blackTint2,
             ),
             const Gap(6),
           ],

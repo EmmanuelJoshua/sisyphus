@@ -1,1 +1,1 @@
-
+enum UserAction { buy, sell }

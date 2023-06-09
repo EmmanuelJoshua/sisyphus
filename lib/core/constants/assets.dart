@@ -14,4 +14,8 @@ class ImageAssets {
   static const String btcusd = '$_svgAssetPath/btcusd.svg';
   static const String charts = '$_svgAssetPath/chart.svg';
   static const String expand = '$_svgAssetPath/expand.svg';
+  static const String arrowDown = '$_svgAssetPath/arrow_down.svg';
+  static const String select1 = '$_svgAssetPath/select1.svg';
+  static const String select2 = '$_svgAssetPath/select2.svg';
+  static const String select3 = '$_svgAssetPath/select3.svg';
 }
