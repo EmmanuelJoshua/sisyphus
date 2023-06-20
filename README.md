@@ -14,9 +14,9 @@ Sisyphus app built with the Flutter framework and Binance Websockets API
 - candlesticks `candlesticks ui`
 - flutter `v3.10 - mobile sdk`
 
-## App screenshots
+## App video & screenshots
 
-![app gif](./screens/app.gif)
+https://github.com/EmmanuelJoshua/sisyphus/assets/40811019/3845c6e8-d1e3-4c37-9dd0-a0c0770eaf3d
 ![imageone](./screens/screen1.png)
 ![imageone](./screens/screen2.png)
 ![imageone](./screens/screen3.png)
